@@ -35,6 +35,30 @@ describe('calculator', function () {
    assert.equal(3, calculator.runningTotal)
    })
 
-   it('it should be ')
+   it('it should be able to click on a series of number and take these as a new number with multiple digits', function(){
+   calculator.numberClick(5)
+   calculator.numberClick(6)
+   assert.equal(56, calculator.runningTotal)
+   })
+
+   it('it should be able to chain together multiple operations', function(){
+   calculator.previousTotal = 0
+   calculator.operatorClick('+')
+   calculator.numberClick(2)
+   calculator.operatorClick('-')
+   calculator.numberClick(1)
+   calculator.operatorClick('=')
+   assert.equal(1, calculator.previousTotal)
+   })
+
+   it('it should be able to clear the running total without affecting the calculation', function(){
+   calculator.previousTotal = 0
+   calculator.operatorClick('+')
+   calculator.numberClick(2)
+   calculator.operatorClick('+')
+   calculator.numberClick(3)
+   calculator.clearClick()
+   assert.equal(2, calculator.previousTotal)
+   })
 
 });
