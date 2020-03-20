@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bc2a7314-18c8-4065-8cd2-7d24c8921b76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/integration/tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/tests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/unit/calculator_spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/calculator_spec.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
