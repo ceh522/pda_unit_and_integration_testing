@@ -78,5 +78,3 @@ Calculator.prototype.clearClick = function(){
   }
   this.runningTotal = 0;
 }
-
-if(typeof module != 'undefined'){ module.exports = Calculator}
